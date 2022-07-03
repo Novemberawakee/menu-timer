@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Menu</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Qwigley&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="heading1">
+        <h1>Our New Menu will be available in...</h1>
+        <div class="countdown">
+            <div class="block">
+                <h5 class="days"></h5>
+                <h6 class="dd">DAYS</h6>
+            </div>
+            <div class="block">
+                <h5 class="hours"></h5>
+                <h6 class="hh">HOURS</h6>
+            </div>
+            <div class="block">
+                <h5 class="minutes"></h5>
+                <h6 class="mm">MINUTES</h6>
+            </div>
+            <div class="block">
+                <h5 class="seconds"></h5>
+                <h6 class="ss">SECONDS</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="one item selected">
+            <h4>SEAFOOD MEDITERRANEA</h4>
+            <p class="par">chilled calamari, pulpo, shrimp, mussels, clams, scungilli, lemon and olive and oil</p>
+            <p class="price">€14</p>
+        </div>
+        <div class="two item">
+            <h4>CHEESE PLATE</h4>
+            <p class="par">tallegio, Soft, Sfizio Crotonese, Sotto Cenere, crostini and grapes</p>
+            <p class="price">€14</p>
+        </div>
+        <div class="three item">
+            <h4>EGGPLANT ROLLATINI</h4>
+            <p class="par">stuffed w/ ricotta served in tomato sauce</p>
+            <p class="price">€12</p>
+        </div>
+        <div class="four item">
+            <h4>PRINCIPESSA</h4>
+            <p class="par">mesclun salad, oranges, beets and walnuts</p>
+            <p class="price">€10</p>
+        </div>
+        <div class="five item">
+            <h4>BLACK COCOA TIRAMISU</h4>
+            <p class="par">marsala caramel, crispy feuilletine</p>
+            <p class="price">€12</p>
+        </div>
+        <div class="six item">
+            <h4>STRAWBERRY LEMONADE SPRITZER</h4>
+            <p class="par">white wine, strawberry lemonade, strawberries, lemon</p>
+            <p class="price">€15</p>
+        </div>
+    </div>
+    <div>
+        <h3 class="heading">If you have questions send us a message!</h3>
+    </div>
+    <form
+        action="https://formspree.io/f/xdobvoqg"
+        method="POST"
+    >
+    <input type="hidden" name="_language" value="en">
+    <div class="heading">
+        <label>
+        Your email:
+        <input class="text" type="email" name="email" placeholder="your email">
+        </label>
+    </div>
+    <div>
+        <label class="heading">
+        Your message:
+        <textarea class="text" name="message" placeholder="text your message"></textarea>
+        </label>
+    </div>
+    <br>
+    <div class="heading">
+        <button class="btn" type="submit">Send</button>
+    </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

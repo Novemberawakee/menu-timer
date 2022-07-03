@@ -1,0 +1,269 @@
+body {
+    background-color: #000000;
+}
+.container {
+    display: flex;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.heading1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+.hide {
+    display: none;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px #FFF solid;
+    width: 85px;
+    height: 150px;
+}
+.days, .hours, .minutes {
+    font-family: 'Krub', sans-serif; 
+    font-size: 20px;
+    color: #49FF00;
+}
+.seconds {
+    font-family: 'Krub', sans-serif; 
+    font-size: 20px;
+    color: #FF0000;
+}
+h6 {
+    font-family: 'Krub', sans-serif; 
+    font-size: 12px;
+}
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+.one {
+    background-image: url(seafood.jpg);
+}
+.two {
+    background-image: url(cheese.jpg);
+}
+.three {
+    background-image: url(eggplant.jpg);
+}
+.four {
+    background-image: url(principessa.jpg);
+}
+.five {
+    background-image: url(tiramisu.jpg);
+}
+.six {
+    background-image: url(lemonade.jpg);
+}
+h1 {
+    font-family: 'Qwigley', cursive;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h4 {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: hsl(0, 0%, 100%, 0.6);
+    color: #000000;
+    font-family: 'Krub', sans-serif;
+    font-size: 0px;
+}
+.par {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: hsl(0, 0%, 100%, 0.6);
+    color: #000000;
+    font-family: 'Krub', sans-serif;
+    font-size: 0px;
+}
+.price {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: hsl(0, 0%, 100%, 0.6);
+    color: #000000;
+    font-family: 'Krub', sans-serif;
+    font-size: 0px;
+}
+.selected {
+    flex: 4;
+}
+.selected h4 {
+    font-size: 30px;
+    transition: all 1s ease-in;
+}
+.selected .par {
+    font-size: 20px;
+    transition: all 1s ease-in;
+}
+.selected .price {
+    font-size: 30px;
+    transition: all 1s ease-in;
+}
+h3 {
+    font-family: 'Qwigley', cursive;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label {
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+}
+.btn {
+    font-family: 'Qwigley', cursive;
+    font-size: 40px;
+    width: 350px;
+    background-color: #000000;
+    border: 3px #fff solid;
+    color: #fff;
+}
+.text {
+    background-color: #000000;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+}
+
+@media all and (max-width: 1024px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+@media all and (max-width: 912px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .selected .price {
+        font-size: 50px;
+    }
+}
+@media all and (max-width: 820px){
+    h1 {
+        font-size: 60px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+@media all and (max-width: 540px){
+    h1 {
+        font-size: 45px;
+    }
+    .selected .price {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px){
+    h1 {
+        font-size: 35px;
+    }
+    .block {
+        width: 60px;
+        height: 120px;
+    }
+    .days, .hours, .minutes {
+        font-size: 15px;
+    }
+    .seconds {
+        font-size: 15px;
+    }
+    .selected h4 {
+        font-size: 20px;
+    }
+    .selected .par {
+        font-size: 15px;
+    }
+    .selected .price {
+        font-size: 30px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .btn {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 360px) {
+    .block {
+        width: 50px;
+        height: 110px;
+    }
+    .days, .hours, .minutes {
+        font-size: 12px;
+    }
+    .seconds {
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 280px){
+    h1 {
+        font-size: 28px;
+    }
+    .block {
+        width: 35px;
+        height: 90px;
+    }
+    .days, .hours, .minutes {
+        font-size: 10px;
+    }
+    .seconds {
+        font-size: 10px;
+    }
+    h6 {
+        font-size: 10px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .selected h4 {
+        font-size: 15px;
+    }
+    .selected .par {
+        font-size: 12px;
+    }
+    .selected .price {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
